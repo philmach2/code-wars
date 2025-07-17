@@ -30,3 +30,29 @@ console.log(usersMapped[0].fullName); // John Smith
 console.log(usersMapped[2].fullName);
 console.log(usersMapped[1].id);
 // So, actually you need to map one array of objects to another. Try using => here. There’s a small catch.
+
+let superman = {
+  secretIdentity: "Clark Kent",
+  cape: true,
+  universe: "DC",
+};
+let batman = {
+  secretIdentity: "Bruce Wayne",
+  cape: true,
+  universe: "DC",
+};
+let spiderMan = {
+  secretIdentity: "Peter Parker",
+  cape: false,
+  universe: "Marvel",
+};
+
+let superheros = [superman, batman, spiderMan];
+
+let superherosMapped = superheros.map((element) => ({
+  alterEgo: element.secretIdentity,
+}));
+
+console.log(superherosMapped[0].secretIdentity);
+console.log(superherosMapped[0].alterEgo);
+console.log(superherosMapped[2].alterEgo);
