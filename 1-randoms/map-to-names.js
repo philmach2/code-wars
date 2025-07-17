@@ -20,3 +20,19 @@ console.log(names); // John, Pete, Mary
 //  iterate through array of user objects
 //  .map()
 //  transform array by making each item in new array users.name
+
+let superman = { secretIdentity: "Clark Kent", cape: true };
+let batman = { secretIdentity: "Bruce Wayne", cape: true };
+let spiderMan = { secretIdentity: "Peter Parker", cape: false };
+
+let superheros = [superman, batman, spiderMan];
+
+let secretIdentities = superheros.map((item) => item.secretIdentity);
+
+let capes = superheros.map((item) => item.cape);
+
+console.log(secretIdentities);
+console.log(capes);
+console.log(spiderMan.cape);
+console.log(batman.secretIdentity);
+console.log(superman);
