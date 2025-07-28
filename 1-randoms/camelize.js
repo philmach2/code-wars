@@ -32,3 +32,25 @@ function camelize(str) {
 console.log(camelize("background-color"));
 console.log(camelize("list-style-image"));
 console.log(camelize("-webkit-transition"));
+
+// input :
+// "background-color"
+// .split("-")
+// ["background", "color"]
+// .filter()
+// ["background", "color"]
+// .charAt(), .toUpperCase(), .slice()
+// ["background", ("C" + "olor")]
+// .join("")
+// "backgroundColor"
+
+// input :
+// "-webkit-transition"
+// .split("-")
+// ["", "webkit", "transition"]
+// .filter()
+// ["webkit", "transition"]
+// .charAt(), .toUpperCase(), .slice()
+// ["webkit", "Transition"]
+// .join("")
+// "webkitTransition"
