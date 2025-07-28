@@ -51,6 +51,6 @@ console.log(camelize("-webkit-transition"));
 // .filter()
 // ["webkit", "transition"]
 // .charAt(), .toUpperCase(), .slice()
-// ["webkit", "Transition"]
+// ["webkit", ("T" + "ransition")]
 // .join("")
 // "webkitTransition"
